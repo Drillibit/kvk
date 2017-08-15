@@ -1,0 +1,46 @@
+#reviews
+  background-image: url('../../images/background.png')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  min-height: 700px
+  .logo
+    display: flex
+    padding-top: 4rem
+    justify-content: center
+    position: relative
+    h1
+      font-family: $logo-font
+      color: deepskyblue
+      margin: 0
+      font-size: 2rem
+      text-transform: uppercase
+    span
+      letter-spacing: 1px
+      font-size: 2rem
+      font-family: $logo-font
+      color: #fff
+      text-transform: capitalize
+      margin-left: .4rem
+    &::after
+      content: ""
+      display: block
+      width: 16rem
+      bottom: 0
+      height: 2px
+      position: absolute
+      background-color: deepskyblue
+  .wrapper
+    display: flex
+    color: #fff
+    align-items: center
+    min-height: 500px
+    flex-wrap: wrap
+    .sup
+      text-align: center
+      padding: 0 1rem
+      min-height: 60%
+      flex: 1 300px
+      &:nth-of-type(2)
+        border-left: 2px solid #fff
+        border-right: 2px solid #fff

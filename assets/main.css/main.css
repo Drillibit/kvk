@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "HeitiStd";
+  src: url("../../fonts/AdobeFanHeitiStd-Bold.otf"); }
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../fonts/Arial.ttf"); }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+#menu {
+  background-color: #0081ff;
+  -webkit-transform: skew(0deg, -4deg);
+  transform: skew(0deg, -4deg);
+  padding: 40px 0 70px 0;
+  margin-top: -17rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  -webkit-box-shadow: 0px 10px 18px 2px rgba(46, 61, 73, 0.4);
+  box-shadow: 0px 10px 18px 2px rgba(46, 61, 73, 0.4); }
+
+#menu .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 100px 0 50px 0;
+  -webkit-transform: skew(0deg, 4deg);
+  transform: skew(0deg, 4deg);
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+#menu .main .logo h1 {
+  font-family: "HeitiStd";
+  color: deepskyblue;
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+#menu .main .logo h1 span {
+  letter-spacing: 1px;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+  margin-left: .4rem; }
+
+#menu .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+#menu .navigation a {
+  text-decoration: none;
+  margin-right: .8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  padding-bottom: 1.4rem; }
+
+#menu .navigation a:hover {
+  border-bottom: 3px solid deepskyblue; }
+
+#showcase {
+  background-image: url("../../images/mainbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding-top: 35vh;
+  margin-top: 30vh; }
+
+#showcase .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+#showcase .showcase {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 4rem;
+  flex: 1 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 50%; }
+
+#showcase .showcase h1 {
+  font-family: 'Roboto', sans-serif; }
+
+#showcase .showcase h1 span {
+  color: deepskyblue; }
+
+#showcase .showcase p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.2rem; }
+
+#about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+#about .wrapper #builder {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 300px;
+  flex: 1 300px; }
+
+#about .wrapper #builder img {
+  margin-left: 5rem;
+  margin-bottom: -.3rem; }
+
+#about .wrapper .text {
+  background-color: #007af3;
+  color: #fff;
+  padding: 0 2rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 300px;
+  flex: 1 300px; }
+
+#about .wrapper .text h3 {
+  font-size: 1.5rem;
+  padding-top: 2rem; }
+
+#about .wrapper .text h3 span {
+  color: deepskyblue; }
+
+#price {
+  min-height: 600px;
+  background-color: #0081ff; }
+
+#price .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 600px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+#price .wrapper .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 288px;
+  flex: 1 288px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #0081ff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 0 1rem;
+  height: 60%;
+  color: #fff;
+  -webkit-box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+#price .wrapper .col h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: .3rem;
+  border-bottom: 2px solid deepskyblue; }
+
+#price .wrapper .col span {
+  text-align: center;
+  border-top: 2px solid deepskyblue;
+  padding-top: .5rem;
+  margin-top: 1.2rem; }
+
+#price .wrapper .col:hover {
+  -webkit-box-shadow: 0px 7px 8px 3px rgba(46, 61, 73, 0.2);
+  box-shadow: 0px 7px 8px 3px rgba(46, 61, 73, 0.2);
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07); }
+
+#reviews {
+  background-image: url("../../images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 700px; }
+
+#reviews .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative; }
+
+#reviews .logo h1 {
+  font-family: "HeitiStd";
+  color: deepskyblue;
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+#reviews .logo span {
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-family: "HeitiStd";
+  color: #fff;
+  text-transform: capitalize;
+  margin-left: .4rem; }
+
+#reviews .logo::after {
+  content: "";
+  display: block;
+  width: 16rem;
+  bottom: 0;
+  height: 2px;
+  position: absolute;
+  background-color: deepskyblue; }
+
+#reviews .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 500px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+#reviews .wrapper .sup {
+  text-align: center;
+  padding: 0 1rem;
+  min-height: 60%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 300px;
+  flex: 1 300px; }
+
+#reviews .wrapper .sup:nth-of-type(2) {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff; }
