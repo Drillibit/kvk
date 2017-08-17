@@ -276,7 +276,7 @@
   border-right: 2px solid #fff; }
 
 #price_d {
-  min-height: 2000px; }
+  min-height: 1750px; }
 
 #price_d .wrapper {
   min-height: 600px;
@@ -287,7 +287,6 @@
 table {
   min-width: 480px;
   width: 50%;
-  height: 100%;
   color: #fff;
   padding: 35px; }
 
@@ -329,7 +328,8 @@ table th {
   background-color: #4929bf;
   -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.5);
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  height: 100%; }
 
 .color-2 {
   background-color: #FF358F;
@@ -340,12 +340,14 @@ table th {
 .color-3 {
   background-color: black;
   -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.5); }
+  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.5);
+  height: 200.3%; }
 
 #contact {
   background-image: url("../../images/footer.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   min-height: 600px; }
 
 #contact .wrapper {
@@ -447,3 +449,15 @@ button:hover {
 
 .fa-envelope {
   font-size: 2rem; }
+
+@media (min-width: 1800px) {
+  .wrapper {
+    width: 70%; }
+  #menu {
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    margin-top: -25rem;
+    padding-top: 167px; }
+  #menu .main {
+    -webkit-transform: skew(0deg, 3deg);
+    transform: skew(0deg, 3deg); } }
