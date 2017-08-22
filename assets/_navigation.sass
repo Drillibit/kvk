@@ -27,16 +27,21 @@
           color: #fff
           text-transform: capitalize
           margin-left: .4rem
-  .navigation
-    display: flex
-    align-items: center
-    a
-      text-decoration: none
-      margin-right: .8rem
-      color: #fff
-      font-size: 1.2rem
-      border-bottom: 3px solid transparent
-      transition: all ease-in-out .3s
-      padding-bottom: 1.4rem
-      &:hover
-        border-bottom: 3px solid deepskyblue
+.navigation
+  display: flex
+  align-items: center
+.nav-item
+  border-bottom: 3px solid transparent
+  text-align: center
+  transition: all ease-in-out .3s
+  padding-bottom: 1.4rem
+  margin-right: .8rem
+  &:hover
+    border-bottom: 3px solid deepskyblue
+.nav-link
+  text-decoration: none
+  color: #fff
+  font-size: 1.2rem
+
+.active
+  border-bottom: 3px solid deepskyblue
