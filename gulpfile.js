@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	browserSync = require('browser-sync'),
 	imagemin = require('gulp-imagemin'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer')
+	cssnano = require('gulp-cssnano');
 
 
 // Compile SASS
@@ -12,6 +13,7 @@ gulp.task('sass', function(){
 		.pipe(sass())
 		.pipe(autoprefixer())
 		.pipe(sass().on('error', sass.logError))
+		.pipe(cssnano())
 		.pipe(gulp.dest('assets/main.css'))
 		.pipe(browserSync.stream());
 });
@@ -54,5 +56,3 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', ['serve', 'sass', 'watch', 'autoprefixer']);
-
-

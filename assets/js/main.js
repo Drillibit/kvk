@@ -6,10 +6,10 @@ $(document).ready(function(){
       scrollTop: $(this.hash).offset().top
     }, 1000);
   });
-  $(window).scroll(function(){ 
+  $(window).scroll(function(){
     var scrollBar = $(this).scrollTop();
     scrollLink.each(function(){
-      var secOf = $(this.hash).offset().top;
+      var secOf = $(this.hash).offset().top - 40;
       if(secOf <= scrollBar){
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');
