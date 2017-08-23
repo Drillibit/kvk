@@ -4,7 +4,8 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	imagemin = require('gulp-imagemin'),
 	autoprefixer = require('gulp-autoprefixer')
-	cssnano = require('gulp-cssnano');
+	cssnano = require('gulp-cssnano')
+	minify = require('gulp-minify');
 
 
 // Compile SASS
@@ -17,7 +18,19 @@ gulp.task('sass', function(){
 		.pipe(gulp.dest('assets/main.css'))
 		.pipe(browserSync.stream());
 });
-
+//js
+gulp.task('js', function(){
+	gulp.src('assets/js/raw/**/*.js')
+	.pipe(minify({
+		ext:{
+			src: 'main.js',
+			min: '.js'
+		},
+		exclude: ['tasks'],
+		noSource: true
+	}))
+	.pipe(gulp.dest('assets/js/main'))
+});
 // Image Task
 gulp.task('image', function(){
 	gulp.src('images/*')
@@ -53,6 +66,7 @@ gulp.task('serve', ['sass'], function(){
 gulp.task('watch', function(){
 	gulp.watch('assets/**/*.sass', ['sass']);
 	gulp.watch('assets/**/*.css', ['autoprefixer']);
+	gulp.watch('assets/**/*.js', ['js']);
 });
 
-gulp.task('default', ['serve', 'sass', 'watch', 'autoprefixer']);
+gulp.task('default', ['serve', 'sass', 'watch', 'autoprefixer', 'js']);
